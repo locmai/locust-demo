@@ -8,7 +8,7 @@ class WebsiteUserTasks(TaskSet):
 
     @task(1)
     def post_index(self):
-            payload = {'username': 'locmai', 'password': 'locmai@kms'}
+            payload = {'username': 'locmai'}
             self.client.post("/api",data=payload, name="POST /api")
 
 
